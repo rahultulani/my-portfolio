@@ -1,0 +1,15 @@
+.center-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Take full viewport height */
+  }
+  
+  .center-card {
+    width: 50%;  /* Set the width of the card */
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }

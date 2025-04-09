@@ -1,0 +1,25 @@
+<mat-toolbar class="toolbar">
+  <span class="spacer"></span>
+  <button mat-button routerLink="/" routerLinkActive="active" class="button" style="color: white;">Home</button>
+  <button mat-button routerLink="/about" routerLinkActive="active" class="button" style="color: white;">About</button>
+  <button mat-button routerLink="/work" routerLinkActive="active" class="button" style="color: white;">Work</button>
+  <button mat-button routerLink="/projects" routerLinkActive="active" class="button" style="color: white;">Projects</button>
+  <button mat-button routerLink="/resume" routerLinkActive="active" class="button" style="color: white;">Resume</button>
+  <button mat-button routerLink="/contact" routerLinkActive="active" class="button" style="color: white;">Contact</button>
+</mat-toolbar>
+
+<div class="social-icons">
+  <a href="https://www.linkedin.com/in/rahul-tulani-6271a8126/" target="_blank">
+    <img src="img/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/rahultulani" target="_blank">
+    <img src="img/github.png" alt="GitHub">
+  </a>
+  <a href="https://leetcode.com/u/rahul_tulani/" target="_blank">
+    <img src="img/leetcode.png" alt="Leetcode">
+  </a>
+</div>
+<!-- Main content section -->
+
+<!-- Display routed content here -->
+<router-outlet></router-outlet>

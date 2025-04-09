@@ -1,0 +1,76 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.toolbar {
+    background: unset;
+    font-size: large;
+    font-weight: bold;
+    cursor: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+img {
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.button{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger; 
+  font-weight: bold;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.social-icons a img {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}

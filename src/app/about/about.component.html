@@ -1,0 +1,26 @@
+<div style="display: flex; justify-content: center; align-items: center; color: white;">
+  <h1>About me</h1>
+</div>
+<mat-card style="display: flex; justify-content: center; align-items: center; width: 50%; margin-left: 25%;">
+    <mat-card-header>
+        <mat-card-title style="font-weight: bold;"></mat-card-title>
+      </mat-card-header>
+    <mat-card-content>{{txt1}}</mat-card-content>
+    <br/>
+    <mat-card-content>{{txt2}}</mat-card-content>
+    <br/>
+    <mat-card-content>{{txt3}}</mat-card-content>
+    <br/>
+    <mat-card-content>{{txt4}}</mat-card-content>
+    <br/>
+    <mat-card-content>{{txt5}}</mat-card-content>
+</mat-card>
+<span style="display: flex; justify-content: center; align-items: center;">
+<button mat-button style="color: white;font-size: x-large;" routerLink="/work" class="rounded-button">Explore Work experience
+  <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+</button>
+<button mat-button style="color: white;font-size: x-large;" routerLink="/projects">Explore Project work
+  <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+</button>
+</span>
+<router-outlet></router-outlet>
