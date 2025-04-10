@@ -10,8 +10,12 @@
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 img {
@@ -77,4 +81,35 @@ img {
   
 .dim-image:hover {
     filter: brightness(100%);
+}
+
+@media screen and (max-width: 480px) {
+  .dim-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bounce {
+    font-size: 1.2rem;
+  }
+  
+  .demo-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dim-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bounce {
+    font-size: 1.5rem;
+  }
 }

@@ -1,14 +1,3 @@
-.spacer {
-    flex: 1 1 auto;
-}
-
-.toolbar {
-    background: unset;
-    font-size: large;
-    font-weight: bold;
-    cursor: auto;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -57,16 +46,70 @@ img {
   font-weight: bold;
 }
 
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  background: unset;
+  font-size: large;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .align-button{
+    align-self: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger; 
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 .social-icons {
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: flex;
-  gap: 10px; /* Space between icons */
+  gap: 10px;
 }
 
 .social-icons a img {
-  width: 40px; /* Adjust icon size */
+  width: 40px;
   height: 40px;
   transition: transform 0.3s ease-in-out;
 }
