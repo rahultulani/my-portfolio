@@ -7,6 +7,19 @@ import { TypewriterService } from '../../common/util/typewriter.service';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  pythonProgress = 85;
+  javaProgress = 80;
+  jsProgress = 70;
+  tsProgress = 70;
+  sqlProgress = 90;
+  springBootProgress = 70;
+  nodeJsProgress = 65;
+  angularProgress = 70;
+  reactProgress = 60;
+  awsProgress = 80;
+  relDatabaseProgress = 90;
+  noSqlProgress = 80;
+  dockerProgress = 70;
   constructor(
     private typeWriterService: TypewriterService
   ){

@@ -8,19 +8,25 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    padding: 20px;
+    padding: 2px;
     display: flex; justify-content: center; align-items: center; color: white;
+    z-index: unset;
   }
 
   @media screen and (max-width: 414px) {
     .container {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         gap: 10px;
+        font-size: xx-small;
       }
 
     .panel{
         padding: 80px;
     }
+
+    .mat-width{
+      width: 70%;
+  }
   }
 
   @media screen and (max-width: 764px) {
@@ -32,6 +38,10 @@
     .panel{
         padding: 24px;
     }
+
+    .mat-width{
+      width: 70%;
+  }
   }
 
   

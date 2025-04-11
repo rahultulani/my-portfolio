@@ -77,10 +77,14 @@ img {
     display: block;
   }
 
+  .menu-button.hide {
+    display: none;
+  }
+
   .align-button{
     align-self: end;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger; 
+    font-size: small; 
     font-weight: bold;
   }
 
@@ -94,6 +98,7 @@ img {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    z-index: unset;
   }
 
   .nav-links.active {
@@ -115,5 +120,5 @@ img {
 }
 
 .social-icons a img:hover {
-  transform: scale(1.2); /* Slight zoom effect on hover */
+  transform: scale(1.2);
 }

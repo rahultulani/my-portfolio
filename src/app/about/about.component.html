@@ -1,26 +1,134 @@
-<div class="container">
-  <h1>About me</h1>
+<div class="about-skills-container">
+  <div class="about-section" style="color: white;">
+    <h1 style="display: flex;justify-content: center;">About Me</h1>
+    <mat-card>
+      <mat-card-content>
+        <p>{{ txt1 }}</p>
+        <p>{{ txt2 }}</p>
+        <p>{{ txt3 }}</p>
+        <p>{{ txt4 }}</p>
+        <p>{{ txt5 }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="skills-section" style="color: white;">
+    <h1 style="display: flex;justify-content: center;">Skills</h1>
+
+    <div class="skill">
+      <p>Python</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ pythonProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="pythonProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Java</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ javaProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="javaProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ jsProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="jsProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>TypeScript</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ tsProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="tsProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>SQL</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ sqlProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="sqlProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Spring Boot</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ springBootProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="springBootProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    
+    <div class="skill">
+      <p>NodeJS</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ nodeJsProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="nodeJsProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Angular</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ angularProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="angularProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>React</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ reactProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="reactProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>AWS</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ awsProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="awsProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Relational Databases(eg. Oracle)</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ relDatabaseProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="relDatabaseProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>NoSQL Databases(eg. DynamoDb, MongoDb)</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ noSqlProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="noSqlProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>Docker</p>
+      <div class="progress-container">
+        <span class="progress-label">{{ dockerProgress }}%</span>
+        <mat-progress-bar mode="determinate" [value]="dockerProgress"></mat-progress-bar>
+      </div>
+    </div>
+
+  </div>
 </div>
-<mat-card style="display: flex; justify-content: center; align-items: center; width: 50%; margin-left: 25%;">
-    <mat-card-header>
-        <mat-card-title style="font-weight: bold;"></mat-card-title>
-      </mat-card-header>
-    <mat-card-content>{{txt1}}</mat-card-content>
-    <br/>
-    <mat-card-content>{{txt2}}</mat-card-content>
-    <br/>
-    <mat-card-content>{{txt3}}</mat-card-content>
-    <br/>
-    <mat-card-content>{{txt4}}</mat-card-content>
-    <br/>
-    <mat-card-content>{{txt5}}</mat-card-content>
-</mat-card>
-<span style="display: flex; justify-content: center; align-items: center;">
-<button mat-button style="color: white;font-size: x-large;" routerLink="/work" class="rounded-button">Explore Work experience
-  <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
-</button>
-<button mat-button style="color: white;font-size: x-large;" routerLink="/projects">Explore Project work
-  <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
-</button>
-</span>
-<router-outlet></router-outlet>
+
+<span style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+  <button mat-button style="color: white;font-size: x-large;" routerLink="/work" class="rounded-button">Explore Work experience
+    <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+  </button>
+  <button mat-button style="color: white;font-size: x-large;" routerLink="/projects">Explore Project work
+    <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+  </button>
+  </span>
+  <router-outlet></router-outlet>

@@ -4,12 +4,12 @@
     <mat-icon>menu</mat-icon>
   </button>
   <div class="nav-links" [ngClass]="{'active': isMenuOpen}">
-    <button mat-button routerLink="/" routerLinkActive="active" class="button align-button" style="color: white;">Home</button>
-    <button mat-button routerLink="/about" routerLinkActive="active" class="button align-button" style="color: white;">About</button>
-    <button mat-button routerLink="/work" routerLinkActive="active" class="button align-button" style="color: white;">Work</button>
-    <button mat-button routerLink="/projects" routerLinkActive="active" class="button align-button" style="color: white;">Projects</button>
-    <button mat-button routerLink="/resume" routerLinkActive="active" class="button align-button" style="color: white;">Resume</button>
-    <button mat-button routerLink="/contact" routerLinkActive="active" class="button align-button" style="color: white;">Contact</button>
+    <button mat-button routerLink="/" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Home</button>
+    <button mat-button routerLink="/about" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">About</button>
+    <button mat-button routerLink="/work" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Work</button>
+    <button mat-button routerLink="/projects" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Projects</button>
+    <button mat-button routerLink="/resume" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Resume</button>
+    <button mat-button routerLink="/contact" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Contact</button>
   </div>
 </mat-toolbar>
 
