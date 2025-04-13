@@ -57,6 +57,8 @@ img {
   font-size: large;
   font-weight: bold;
   cursor: auto;
+  z-index: 1000;
+  position: relative;
 }
 
 .spacer {
@@ -66,6 +68,7 @@ img {
 .nav-links {
   display: flex;
   gap: 15px;
+  justify-content: right;
 }
 
 .menu-button {
@@ -82,7 +85,6 @@ img {
   }
 
   .align-button{
-    align-self: end;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small; 
     font-weight: bold;
@@ -91,14 +93,18 @@ img {
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 0;
     right: 0;
+    height: 100vh;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    z-index: unset;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
   }
 
   .nav-links.active {
