@@ -59,6 +59,7 @@ img {
   cursor: auto;
   z-index: 1000;
   position: relative;
+  height: auto;
 }
 
 .spacer {
@@ -86,7 +87,6 @@ img {
 
   .align-button{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: small; 
     font-weight: bold;
   }
 

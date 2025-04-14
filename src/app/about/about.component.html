@@ -10,9 +10,17 @@
         <p>{{ txt5 }}</p>
       </mat-card-content>
     </mat-card>
+    <span style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+      <button mat-button class="route-button" routerLink="/work">Explore Work experience
+        <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+      </button>
+      <button mat-button class="route-button" routerLink="/projects">Explore Project work
+        <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
+      </button>
+      </span>
   </div>
 
-  <div class="skills-section" style="color: white;">
+  <div class="skills-section">
     <h1 style="display: flex;justify-content: center;">Skills</h1>
 
     <div class="skill">
@@ -123,12 +131,12 @@
   </div>
 </div>
 
-<span style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+<!-- <span style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
   <button mat-button style="color: white;font-size: x-large;" routerLink="/work" class="rounded-button">Explore Work experience
     <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
   </button>
   <button mat-button style="color: white;font-size: x-large;" routerLink="/projects">Explore Project work
     <img src="img/arrow.png" style="width: 20px; height: 20px;"/>
   </button>
-  </span>
+  </span> -->
   <router-outlet></router-outlet>
