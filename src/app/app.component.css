@@ -128,3 +128,8 @@ img {
 .social-icons a img:hover {
   transform: scale(1.2);
 }
+
+.logo-zoom:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}

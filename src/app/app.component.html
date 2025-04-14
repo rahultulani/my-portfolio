@@ -1,9 +1,11 @@
 <mat-toolbar class="toolbar">
+  <button mat-button class="logo-zoom" routerLink="/" routerLinkActive="active" style="font-family: monospace; font-weight: bold;font-size: xx-large; color: springgreen;">
+    &lt;<span style="color: white;">RT</span>/&gt;
+  </button>
   <span class="spacer"></span>
   <button mat-icon-button class="menu-button" (click)="toggleMenu()">
     <mat-icon style="color: white;">menu</mat-icon>
   </button>
-</mat-toolbar>
   <div class="nav-links" [ngClass]="{'active': isMenuOpen}">
     <button mat-button routerLink="/" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Home</button>
     <button mat-button routerLink="/about" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">About</button>
@@ -12,8 +14,7 @@
     <button mat-button routerLink="/resume" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Resume</button>
     <button mat-button routerLink="/contact" routerLinkActive="active" class="button align-button" style="color: white;" (click)="toggleMenu()">Contact</button>
   </div>
-
-
+</mat-toolbar>
 <div class="social-icons">
   <a href="https://www.linkedin.com/in/rahul-tulani-6271a8126/" target="_blank">
     <img src="img/linkedin.png" alt="LinkedIn">
