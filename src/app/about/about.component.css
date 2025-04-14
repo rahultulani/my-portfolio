@@ -76,6 +76,7 @@
     flex: 1;
     width: 70%;
     color: white;
+    margin-bottom: 50px;
   }
   
   .about-section mat-card {
