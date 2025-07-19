@@ -11,5 +11,5 @@ jobs:
     steps:
 
       - uses: actions/checkout@v4
-      # - run: git branch
-      - run: git diff main dev >> differences.json
+      - run: git fetch --all
+      - run: git diff origin/main origin/dev > differences.json
