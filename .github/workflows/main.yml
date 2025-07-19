@@ -1,0 +1,15 @@
+name: get-diff-between-branches-actions
+
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on: [pull_request]
+
+jobs:
+  get-diff:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - run: git diff main dev >> differences.json
