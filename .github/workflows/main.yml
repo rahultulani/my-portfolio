@@ -16,7 +16,7 @@ jobs:
       - name: Fetch all branches
         run: git fetch --all
       - name: Compare main vs dev and save diff
-        run: git diff origin/main origin/dev > differences.json
+        run: git diff origin/main origin/dev -- . ':(exclude).github/workflows/' > differences.json
         
       - name: Upload differences.json as artifact
         uses: actions/upload-artifact@v4
