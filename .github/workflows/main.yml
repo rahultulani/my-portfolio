@@ -9,7 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - uses: actions/checkout@v4
-      - run: git fetch --all
-      - run: git diff origin/main origin/dev > differences.json
+      - name: Checkout repo with all branches
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch all branches
+        run: git fetch --all
+      - name: Compare main vs dev and save diff
+        run: git diff origin/main origin/dev > differences.json
+        
+      - name: Upload differences.json as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: differences
+          path: differences.json
